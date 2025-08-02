@@ -11,14 +11,6 @@ import java.lang.annotation.*;
  * <p>
  * Supports optional case-insensitive matching.
  * </p>
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @EndsWith(suffix = ".com", ignoreCase = true, message = "Email must end with '.com'")
- * private String email;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = EndsWithValidator.class)

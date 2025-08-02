@@ -9,18 +9,6 @@ import java.lang.annotation.*;
 /**
  * Class-level constraint that validates two fields in the same object
  * are equal (e.g., password and confirmPassword).
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @FieldsMatch(field = "password", fieldMatch = "confirmPassword", message = "Passwords must match")
- * public class RegistrationForm {
- *     private String password;
- *     private String confirmPassword;
- *     // getters and setters
- * }
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = FieldsMatchValidator.class)

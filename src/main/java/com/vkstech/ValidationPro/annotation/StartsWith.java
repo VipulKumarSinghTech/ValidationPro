@@ -11,14 +11,6 @@ import java.lang.annotation.*;
  * <p>
  * Optionally supports case-insensitive matching.
  * </p>
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @StartsWith(prefix = "CUS-", ignoreCase = false, message = "ID must start with 'CUS-'")
- * private String customerId;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = StartsWithValidator.class)

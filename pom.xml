@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.VipulKumarSinghTech</groupId>
+    <groupId>com.github.vipulkumarsinghtech</groupId>
     <artifactId>ValidationPro</artifactId>
     <version>1.0</version>
 
@@ -26,14 +26,12 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.7.0</version>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.8.0</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <publishingServerId>central</publishingServerId>
                 </configuration>
             </plugin>
             <plugin>
@@ -43,6 +41,7 @@
                 <executions>
                     <execution>
                         <id>attach-sources</id>
+                        <phase>package</phase>
                         <goals>
                             <goal>jar-no-fork</goal>
                         </goals>
@@ -56,6 +55,7 @@
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
+                        <phase>package</phase>
                         <goals>
                             <goal>jar</goal>
                         </goals>
@@ -123,6 +123,7 @@
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
             <version>3.1.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 

@@ -12,15 +12,6 @@ import java.lang.annotation.*;
  *
  * <p>Use this to apply validations like {@code @Pattern}, {@code @Size}, etc.,
  * conditionally when a field is present (i.e., not null).</p>
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @IfPresent
- * @Pattern(regexp = "\\d{10}", message = "Must be a 10-digit phone number")
- * private String phoneNumber;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = IfPresentValidator.class)

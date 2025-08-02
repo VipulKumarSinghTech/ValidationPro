@@ -10,14 +10,6 @@ import java.lang.annotation.*;
  * Validates that a string does not contain HTML or XML tags.
  *
  * <p>Any input containing elements like {@code <tag>} or {@code </tag>} will be considered invalid.</p>
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @NoHtmlTags
- * private String userComment;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = NoHtmlTagsValidator.class)

@@ -10,14 +10,6 @@ import java.lang.annotation.*;
  * Validates that a file name or path string ends with one of the allowed file extensions.
  *
  * <p>Supports case-insensitive validation of file types like .jpg, .png, .pdf, etc.</p>
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @ValidFileExtension(extensions = {".jpg", ".png"})
- * private String profilePicture;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = ValidFileExtensionValidator.class)

@@ -9,14 +9,6 @@ import java.lang.annotation.*;
 /**
  * Validates that a {@link java.time.temporal.Temporal} date/time field
  * is in the future, but not more than the specified number of days ahead.
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @FutureWithin(days = 30, message = "Date must be within 30 days from now")
- * private LocalDate appointmentDate;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = FutureWithinValidator.class)

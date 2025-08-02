@@ -11,14 +11,6 @@ import java.lang.annotation.*;
  * <p>
  * Optional case-insensitive matching is supported.
  * </p>
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @ContainsSubstring(value = "admin", ignoreCase = true, message = "Username must contain 'admin'")
- * private String username;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = ContainsSubstringValidator.class)

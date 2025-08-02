@@ -18,12 +18,6 @@ import java.util.Arrays;
  * <p>If the input value is {@code null}, it is considered valid. Use {@code @NotNull}
  * in conjunction if nulls should be rejected.</p>
  *
- * <p>Example:</p>
- * <pre>{@code
- * @ValidEnum(enumClass = Role.class, ignoreCase = true)
- * private String userRole;
- * }</pre>
- *
  * @see ValidEnum
  */
 public class ValidEnumValidator implements ConstraintValidator<ValidEnum, String> {

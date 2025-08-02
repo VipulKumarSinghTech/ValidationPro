@@ -8,14 +8,6 @@ import java.lang.annotation.*;
 
 /**
  * Validates that the value of a string, number, or enum field is not in a specified list of disallowed values.
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @NotIn({"admin", "root", "superuser"})
- * private String username;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = NotInValidator.class)

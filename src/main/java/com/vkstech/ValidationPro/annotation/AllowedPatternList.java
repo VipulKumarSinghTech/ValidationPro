@@ -10,17 +10,6 @@ import java.lang.annotation.*;
  * Validates that a string matches at least one of the provided regular expression patterns.
  *
  * <p>Useful when input can conform to multiple formats, like different phone number styles or ID patterns.</p>
- *
- * <p>Example usage:</p>
- * <pre>
- * {@code
- * @AllowedPatternList(patterns = {
- *     "^\\d{10}$",            // 10-digit phone number
- *     "^\\+\\d{1,3}-\\d{10}$" // International format
- * })
- * private String phoneNumber;
- * }
- * </pre>
  */
 @Documented
 @Constraint(validatedBy = AllowedPatternListValidator.class)

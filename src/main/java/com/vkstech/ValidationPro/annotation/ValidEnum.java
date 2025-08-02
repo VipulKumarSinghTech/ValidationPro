@@ -13,18 +13,6 @@ import java.lang.annotation.*;
  * <p>This annotation is typically used on {@code String} fields or parameters that are
  * meant to map to known enum constants.</p>
  *
- * <p>Example usage:</p>
- * <pre>{@code
- * public enum Status {
- *     ACTIVE, INACTIVE, SUSPENDED
- * }
- *
- * public class UserDTO {
- *     @ValidEnum(enumClass = Status.class, message = "Invalid status")
- *     private String status;
- * }
- * }</pre>
- *
  * <p>Supports optional case-insensitive comparison for string values using the {@code ignoreCase} flag.</p>
  *
  * @see jakarta.validation.ConstraintValidator
