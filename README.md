@@ -1,6 +1,3 @@
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.VipulKumarSinghTech/DateUtils.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/com.github.vipulkumarsinghtech/ValidationPro)
-
-
 # 📦 ValidationPro
 
 This library provides custom validation annotations for use with Jakarta Bean Validation (e.g., in Spring Boot or Jakarta EE applications).
